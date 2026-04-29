@@ -510,3 +510,48 @@ for(let prop in Tenis){
 // 59: Crie um objeto carro com marca "Fiat" e um objeto motor com potencia "1.0"
 
 // 60: Crie um array com 3 objetos de produtos (nome e preço) e exiba todos
+
+// EXERCÍCIOS ForEach:
+
+console.log("=======Exercício 1: Mostrar Elementos");
+{
+let numeross = [1,2,3,4];
+console.log("Usando for");
+for(let i=0; i<numeross.lenght;i++){
+    console.log(numeross[i]);
+
+}
+console.log("Usando foreach");
+numeross.forEach(function(n){    //foreach percorre o array, e oque foi percorrido se torna o n
+    if(n % 2 ===0){
+    console.log(n);
+    }
+});
+
+console.log("ForEach Arrow modo seta");
+numeross.forEach(n => console.log(n));
+}
+
+//dados do array:
+//let frutas ["Maça", "Banana", "Uva", "Abaccate"];
+//utilizar ForEach função anônima e função arrow.
+{
+let frutaz = ["Maça", "Banana", "Uva", "Abaccate"];
+    console.log("ForEach arrow")
+frutaz.forEach(n => console.log(n));
+
+console.log("ForEach anônimo")
+frutaz.forEach(function(n){
+    console.log(n)
+})
+}
+
+//Some todos os valores e mostre o resultado
+//Preços 10, 30, 50, 60
+
+let precos = [10, 30, 50, 60];
+let ssoma = 0
+precos.forEach(function(preco){
+    ssoma += preco;
+});
+console.log(ssoma);
